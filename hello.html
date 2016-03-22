@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
+
+    <!-- js -->
+    <script src="javascripts/jquery-2.2.2.min.js"></script>
+    <script src="javascripts/angular.min.js"></script>
+</head>
+<body>
+
+<main class="container">
+    <h1>Angular Hello Page</h1>
+    <input placeholder="Your name please" ng-model="name" />
+
+    <label class="col-md-6 alert alert-info">
+        {{ name }}
+    </label>
+</main>
+</body>
+</html>

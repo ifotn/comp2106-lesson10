@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CalculatorApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
+
+    <!-- js -->
+    <script src="javascripts/jquery-2.2.2.min.js"></script>
+    <script src="javascripts/angular.min.js"></script>
+    <script src="javascripts/calculator.js"></script>
+</head>
+<body>
+
+<div class="container" ng-controller="CalculatorController">
+    <h1>AngularJS Calculator</h1>
+    <div class="row">
+        <input type="number" ng-model="x" />
+        <select ng-model="op">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+        <input type="number" ng-model="y" />
+        =
+        <label class="alert alert-info">{{ result() }}</label>
+    </div>
+</div>
+
+</body>
+</html>
